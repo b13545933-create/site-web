@@ -1,0 +1,234 @@
+body { 
+	background-color: #ffffcc;
+	font-size:16px;
+	font-family: arial,sans-serif;
+}
+a { 
+	border:none;
+	padding: 10px 20px; 
+	background-color:#0f1a34;
+	color:white;
+	font-size:30px;
+	cursor:pointer;
+	transition:background-color 0.3sease;
+	border-radius:  12px 12px 12px 12px;
+}
+a:hover{
+	background-color:#0056b3;
+}
+header {
+	width:100%;
+	background-color:#0f1a34;
+	color:white;
+	padding:18px 5px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	border-radius:0 0 0 0;
+	box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+.fond {
+	background-image:url("7.jsp");
+	height: 400px;
+	background-size: cover;
+	background-position:center;
+	position:relative;
+	border-radius: 0 0 12px 12px;
+}
+#phrase { 
+	padding:45px 55px;
+	color:white;
+	font-size:33px;
+}
+#menu li {display:inline; padding:10em;}
+h1 {
+    font-weight: 700;
+    color: gold; 
+    text-align: center;
+    position: relative;
+    padding: 25px 40px;
+    font-family: "Times New Roman", serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+section {
+	background-color:white;
+	border-radius: 15px;
+	padding:25px 35px;
+	font-size: 20px;
+	text-align:center;
+	max-width:800px;
+	margin: 40px auto;
+	box-shadow:0 4px 15px rgba(0,0,0,0.1);
+	line-height:1.6;
+	color:#333;
+}
+.section h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+.gallery-item {
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: 220px;                  
+    object-fit: cover;              
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+.caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+#paragraphe{
+	max-width: 1000px;
+    margin: 40px auto;
+	font-size:17px;
+}
+.grille {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.card, .end {
+	text-align: center;
+	width: 100%;
+    height: 220px;                  
+    object-fit: cover;              
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	font-size:20px;
+}
+.grille .end{
+	align-self:center;
+	width:205%;
+}
+#classique {
+	background-color:#eee9cc;
+}
+#jazz {
+	background-color:#000080;
+	color:white;
+}
+#rock {
+	background-color:#303030;
+	color:white;
+}
+#rap {
+	background-color:#9400D3;
+}
+#salsa {
+	background-color:#FF7F50;
+}
+#debut {
+	font-size:20px;
+	text-align:center;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+audio{
+	background-color:
+}
+#lire {
+	text-align:center;
+	
+}
+#lire p{
+	font-size:20px;
+}
+li{
+	display:block;
+}
+.playlist {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.piste {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2cefe;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.nom {
+    display: flex;
+    flex-direction: column;
+	font-size: 16px;
+    margin-bottom: 4px;
+}
+.piste audio {
+    width: 200px;      
+    height: 30px;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menu li {
+    display: block;
+    padding: 10px;
+  }
+
+  a {
+    font-size: 18px;
+    display: block;
+    margin: 8px auto;
+  }
+  #phrase {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .grille {
+    grid-template-columns: 1fr;
+  }
+  .grille .end {
+    width: 100%;
+  }
+  .piste {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .piste audio {
+    width: 100%;
+  }
+
+}
